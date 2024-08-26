@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Each oart of the game is divided with div -->
+     <!-- The menu div is where the player can navigate to start or quit the game  -->
+    <div id="menu">
+        <div id="options">
+            <ul>
+                <li><button id="start">Start</button></li>
+                <li><button id="cred">Credits</button></li>
+                <li><button id="quit">Quit</button></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Credit shows the people who participated in the project -->
+    <div id="credit">
+        
+        <h1>Made by: </h1>
+        <ul>
+            <li><h3>Makeda Yonas</h3></li>
+            <li><h3>Tigist Getu</h3></li>
+            <li><h3>Tsedalu Ashenfai</h3></li>
+            <li><h3>Ruhama Kasahun</h3></li>
+            <li><h3>Yusuf Hashim</h3></li>
+            <button class="back">Back to main menu</button>
+        </ul>
+        
+    </div>
+    <!-- The is where the game takes place -->
+    <div class="screen">
+        <div class="lifeBar">
+            <div class="health">
+                <h4>Abebe's-Health</h4>
+            </div>
+        </div>
+        <div id="quiz">
+            <h1 id="tag">Answer the question to help Abebe leave the forest safely!!</h1>
+            <div id="main">   
+                <h3><label id="que" for="question"></label></h3>
+                <div id="right">
+                    <input type="text" placeholder="answer" id="question" autofocus>
+                    <button id="ans" type="submit">Answer</button>
+                </div>
+                <div id="left">
+                    <img id="image" src="images/nerdNormal.png" alt="">
+                </div>
+            </div>
+            <div id="points">
+                <h2>Score: <span id="score">0</span></h2>
+                <h2>Missed: <span id="missed">0</span></h2>
+            </div>
+        </div>
+        <div class="player">
+            <div class="figure" id="figure">
+                <div class="head"></div>
+                <div class="left_arm"></div>
+                <div class="right_arm"></div>
+                <div class="left_leg"></div>
+                <div class="right_leg"></div>
+            </div>
+        </div>
+        <div class="floor"></div>
+    </div>
+    <!-- THis will be displayed if the player loses -->
+    <div id="death">
+        <h1>Abebe is now missing...</h1>
+        <img src="images/bear.jpg" alt="" width="2000px">
+        <button class="back">Back to main menu</button>
+    </div>
+    <!-- This will be displayed when the player wins -->
+    <div id="win">
+        <h1>You got Abebe out, Congrats!</h1>
+        <img id="winImg" src="images/nerdJumping.png" alt="abebe jumping" width="50%" height="50%">
+        <button class="back">Back to main menu</button>
+    </div>
+</body>
+<script src="jquery.js"></script>
+<script src="index.js"></script>
+
+</html>
